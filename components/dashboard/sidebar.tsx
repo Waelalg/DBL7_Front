@@ -17,7 +17,8 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Dashboard", href: "/", icon: LayoutDashboard },
+  { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+  { name: "Demand Forecasting", href: "/demandForecasting", icon: Bell },
   { name: "Notification", href: "/notifications", icon: Bell },
   { name: "Rapport", href: "/reports", icon: FileText },
   { name: "Planification", href: "/planning", icon: Calendar },

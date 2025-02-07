@@ -1,9 +1,9 @@
 import { Search } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { ModelPerformance } from "@/components/model-performance";
-import { ActionItems } from "@/components/action-items";
-import { Departments } from "@/components/departments";
+import { ModelPerformance } from "@/components/dashboard/model-performance";
+import { ActionItems } from "@/components/dashboard/action-items";
+import { Departments } from "@/components/dashboard/departments";
 import { Button } from "@/components/ui/button";
 
 export default function DashboardPage() {
