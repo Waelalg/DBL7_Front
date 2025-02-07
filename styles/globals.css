@@ -10,9 +10,6 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  .border-border {
-    border-color: theme('colors.border'); /* Refer to the custom color */
-  }
 }
 
 @layer base {
