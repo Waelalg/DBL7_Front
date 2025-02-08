@@ -35,7 +35,7 @@ export function ScenarioDetails({ productName }: ScenarioDetailsProps) {
 
   const handleImplementScenario = () => {
     const encodedProductName = encodeURIComponent(productName)
-    router.push(`/planning/${encodedProductName}/plandetails`)
+    router.push(`/home/planning/${encodedProductName}/plandetails`)
   }
 
   return (

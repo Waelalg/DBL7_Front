@@ -52,7 +52,7 @@ export function PredictionDialog({ open, onOpenChange }: PredictionDialogProps) 
         setIsProcessing(false)
         onOpenChange(false)
         setStep(1)
-        router.push("/demandForecasting")
+        router.push("/home/demandForecasting")
       }, 2000)
     }
   }

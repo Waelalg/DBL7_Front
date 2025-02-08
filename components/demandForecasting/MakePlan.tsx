@@ -6,7 +6,7 @@ export function MakePlan() {
   const router = useRouter()
 
   const handleMakePlan = () => {
-    router.push("/planning/gabriela-cashmere-blazer")
+    router.push("/home/planning/gabriela-cashmere-blazer")
   }
 
   return (
