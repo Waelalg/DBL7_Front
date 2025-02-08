@@ -6,12 +6,11 @@ import { Button } from "@/components/ui/button";
 
 export default function MakePrediction() {
   return (
-    <div className="space-y-4">
+    <div className="flex items-center justify-between p-4 border rounded-lg">
       <p className="text-sm text-muted-foreground">
-        Enter prediction parameters below:
+        Enter prediction parameters :
       </p>
-      {/* Replace the following with your actual prediction form or logic */}
-      <Button className="bg-blue-600 hover:bg-blue-700">Predict</Button>
+      <Button>Predict</Button>
     </div>
   );
 }
