@@ -18,13 +18,13 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { name: "Notification", href: "/notifications", icon: Bell },
-  { name: "Rapport", href: "/reports", icon: FileText },
-  { name: "Planification", href: "/planning", icon: Calendar },
-  { name: "Produit", href: "/products", icon: Package },
-  { name: "users", href: "/users", icon: User },
-  { name: "Parametres", href: "/parameters", icon: Settings },
+  { name: "Dashboard", href: "/home/dashboard", icon: LayoutDashboard },
+  { name: "Notification", href: "/home/notifications", icon: Bell },
+  { name: "Rapport", href: "/home/reports", icon: FileText },
+  { name: "Planification", href: "/home/planning", icon: Calendar },
+  { name: "Produit", href: "/home/products", icon: Package },
+  { name: "users", href: "/home/users", icon: User },
+  { name: "Parametres", href: "/home/parameters", icon: Settings },
 ];
 
 export function Sidebar() {
