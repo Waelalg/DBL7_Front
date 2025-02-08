@@ -48,7 +48,7 @@ export function Departments() {
             <Settings className="h-4 w-4" />
             Customize
           </Button>
-          <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+          <Button >
             + Add team
           </Button>
         </div>

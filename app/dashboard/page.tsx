@@ -14,7 +14,7 @@ export default function DashboardPage() {
           <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
           <Input placeholder="Rechercher..." className="pl-8" />
         </div>
-        <Button className="bg-purple-600 hover:bg-purple-700">
+        <Button>
           + Add new widget
         </Button>
       </div>
