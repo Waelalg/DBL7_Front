@@ -8,6 +8,7 @@ import {
   Calendar,
   Package,
   Settings,
+  User,
 } from "lucide-react";
 
 interface NavigationItem {
@@ -18,12 +19,12 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { name: "Demand Forecasting", href: "/demandForecasting", icon: Bell },
   { name: "Notification", href: "/notifications", icon: Bell },
   { name: "Rapport", href: "/reports", icon: FileText },
   { name: "Planification", href: "/planning", icon: Calendar },
   { name: "Produit", href: "/products", icon: Package },
-  { name: "Parametres", href: "/settings", icon: Settings },
+  { name: "users", href: "/users", icon: User },
+  { name: "Parametres", href: "/parameters", icon: Settings },
 ];
 
 export function Sidebar() {
