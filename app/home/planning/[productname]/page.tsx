@@ -54,4 +54,3 @@ export default function ProductPlanningPage({ params }: { params: { productName:
     </SidebarProvider>
   )
 }
-
