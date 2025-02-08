@@ -1,5 +1,6 @@
 "use client"
 
+import { useRouter } from "next/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -25,7 +26,18 @@ const scenarioData = {
   ],
 }
 
-export function ScenarioDetails() {
+interface ScenarioDetailsProps {
+  productName: string
+}
+
+export function ScenarioDetails({ productName }: ScenarioDetailsProps) {
+  const router = useRouter()
+
+  const handleImplementScenario = () => {
+    const encodedProductName = encodeURIComponent(productName)
+    router.push(`/planning/${encodedProductName}/plandetails`)
+  }
+
   return (
     <Card>
       <CardHeader>
@@ -74,7 +86,7 @@ export function ScenarioDetails() {
           </div>
         </div>
         <div className="mt-6 flex justify-end">
-          <Button>Implement Scenario</Button>
+          <Button onClick={handleImplementScenario}>Implement Scenario</Button>
         </div>
       </CardContent>
     </Card>
