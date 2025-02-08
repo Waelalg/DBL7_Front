@@ -1,16 +1,11 @@
-// app/demandForecasting/page.tsx
-"use client";
-
-import React from "react";
-import { DownloadIcon } from "@radix-ui/react-icons";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import MakePrediction from "./make-prediction";
-import { PredictionOverview } from "@/components/demandForecasting/PredictionOverview";
-import { PreviousPredictions } from "@/components/demandForecasting/PreviousPredictions";
-import { NotesCard } from "@/components/demandForecasting/NotesCard";
-import { FilesDocumentsCard } from "@/components/demandForecasting/FilesDocumentsCard";
+"use client"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import MakePrediction from "./make-prediction"
+import { MakePlan } from "@/components/demandForecasting/MakePlan"
+import { PredictionOverview } from "@/components/demandForecasting/PredictionOverview"
+import { NotesCard } from "@/components/demandForecasting/NotesCard"
+import { FilesDocumentsCard } from "@/components/demandForecasting/FilesDocumentsCard"
 
 export default function DemandForecastingPage() {
   return (
@@ -32,30 +27,38 @@ export default function DemandForecastingPage() {
               </CardContent>
             </Card>
 
+            {/* Make Plan */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Make Plan</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <MakePlan />
+              </CardContent>
+            </Card>
+
             {/* Previous Predictions */}
-           <Card className="p-4">
-      <CardHeader>
-        <CardTitle className="text-lg">Previous Predictions</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-4">
-          <div className="flex items-center justify-between p-3 border rounded-lg">
-            <div>
-              <p className="text-sm font-medium">prediction_001.csv</p>
-              <p className="text-xs text-muted-foreground">© 2024-02-07</p>
-            </div>
-            <div className="flex items-center space-x-4">
-              <span className="text-sm font-medium text-green-600">
-                Accuracy: 92%
-              </span>
-              <Button variant="outline" size="sm">
-                View Results
-              </Button>
-            </div>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
+            <Card className="p-4">
+              <CardHeader>
+                <CardTitle className="text-lg">Previous Predictions</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between p-3 border rounded-lg">
+                    <div>
+                      <p className="text-sm font-medium">prediction_001.csv</p>
+                      <p className="text-xs text-muted-foreground">© 2024-02-07</p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <span className="text-sm font-medium text-green-600">Accuracy: 92%</span>
+                      <Button variant="outline" size="sm">
+                        View Results
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Right Sidebar */}
@@ -69,5 +72,6 @@ export default function DemandForecastingPage() {
         </div>
       </div>
     </div>
-  );
+  )
 }
+

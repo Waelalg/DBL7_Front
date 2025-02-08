@@ -9,6 +9,7 @@ import {
   Package,
   Settings,
   User,
+  TvIcon,
 } from "lucide-react";
 
 interface NavigationItem {
@@ -22,6 +23,7 @@ const navigation: NavigationItem[] = [
   { name: "Notification", href: "/notifications", icon: Bell },
   { name: "Rapport", href: "/reports", icon: FileText },
   { name: "Planification", href: "/planning", icon: Calendar },
+  { name: "Execution", href: "/scenarios", icon: TvIcon },
   { name: "Produit", href: "/products", icon: Package },
   { name: "users", href: "/users", icon: User },
   { name: "Parametres", href: "/parameters", icon: Settings },
