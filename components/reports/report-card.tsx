@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import type { Report } from "@/types/report"
 
 const statusColors = {
   draft: "bg-gray-100 text-gray-800",
@@ -15,8 +14,8 @@ const statusColors = {
 }
 
 interface ReportCardProps {
-  report: Report
-  onAction: (action: string, report: Report) => void
+  report: any
+  onAction: (action: string, report: any) => void
 }
 
 export function ReportCard({ report, onAction }: ReportCardProps) {

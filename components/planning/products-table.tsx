@@ -7,10 +7,9 @@ import { Edit2, Trash2, Search } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import type { Product } from "@/types/product"
 
 // Sample data - in a real app this would come from an API
-const products: Product[] = [
+const products: any[] = [
   {
     id: "1",
     name: "Gabriela Cashmere Blazer",
@@ -65,7 +64,7 @@ export function ProductsTable() {
                 </TableCell>
                 <TableCell>
                   <Link
-                    href={`/planning/${encodeURIComponent(product.name.toLowerCase().replace(/ /g, "-"))}`}
+                    href={`/home/planning/${encodeURIComponent(product.name.toLowerCase().replace(/ /g, "-"))}`}
                     className="flex items-center gap-3 hover:underline"
                   >
                     <Image

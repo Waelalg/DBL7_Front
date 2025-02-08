@@ -3,10 +3,9 @@
 import { useState } from "react"
 import { ReportsFilter } from "@/components/reports/reports-filter"
 import { ReportCard } from "@/components/reports/report-card"
-import type { Report } from "@/types/report"
 
 // Sample data - in a real app, this would come from an API
-const reports: Report[] = [
+const reports: any[] = [
   {
     id: "1",
     title: "Q4 2024 Sales Analysis",

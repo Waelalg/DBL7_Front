@@ -6,11 +6,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent } from "@/components/ui/card"
-import type { UserProfile } from "@/types/user"
 
 interface ProfileSectionProps {
-  user: UserProfile
-  onUpdate: (data: Partial<UserProfile>) => Promise<void>
+  user: any
+  onUpdate: (data: Partial<any>) => Promise<void>
 }
 
 export function ProfileSection({ user, onUpdate }: ProfileSectionProps) {

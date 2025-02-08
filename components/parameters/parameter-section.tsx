@@ -5,12 +5,11 @@ import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import type { Parameter } from "@/types/parameters"
 
 interface ParameterSectionProps {
   title: string
   description: string
-  parameters: Parameter[]
+  parameters: any[]
   onParameterChange: (parameterId: string, value: any) => void
 }
 

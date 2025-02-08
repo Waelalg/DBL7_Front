@@ -4,12 +4,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
-import type { UserRole } from "@/types/user"
 
 interface RoleSectionProps {
-  currentRole: UserRole
+  currentRole: any
   department: string
-  onUpdate: (data: { role?: UserRole; department?: string }) => Promise<void>
+  onUpdate: (data: { role?: any; department?: string }) => Promise<void>
 }
 
 export function RoleSection({ currentRole, department, onUpdate }: RoleSectionProps) {

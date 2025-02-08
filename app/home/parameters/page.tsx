@@ -6,11 +6,9 @@ import { RoleSection } from "@/components/parameters/role-section"
 import { ParameterSection } from "@/components/parameters/parameter-section"
 import { ParametersNav } from "@/components/parameters/parameters-nav"
 import { SecuritySection } from "@/components/parameters/security-section"
-import type { UserProfile } from "@/types/user"
-import type { Parameter } from "@/types/parameters"
 
 // Mock user data
-const mockUser: UserProfile = {
+const mockUser: any = {
   name: "John Doe",
   avatar: "/placeholder.svg?height=100&width=100",
   role: "manager",
@@ -18,7 +16,7 @@ const mockUser: UserProfile = {
 }
 
 // Mock parameters data
-const mockParameters: Parameter[] = [
+const mockParameters: any[] = [
   {
     id: "theme",
     label: "Theme",
@@ -39,12 +37,12 @@ const mockParameters: Parameter[] = [
 ]
 
 export default function Parameters() {
-  const [user, setUser] = useState<UserProfile>(mockUser)
-  const [parameters, setParameters] = useState<Parameter[]>(mockParameters)
+  const [user, setUser] = useState<any>(mockUser)
+  const [parameters, setParameters] = useState<any[]>(mockParameters)
   const [currentSection, setCurrentSection] = useState("account")
 
-  const handleUserUpdate = async (data: Partial<UserProfile>) => {
-    setUser((prevUser) => ({ ...prevUser, ...data }))
+  const handleUserUpdate = async (data: Partial<any>) => {
+    setUser((prevUser:any) => ({ ...prevUser, ...data }))
     // Here you would typically call an API to update the user data
   }
 

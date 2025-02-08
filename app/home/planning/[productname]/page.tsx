@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "AI-powered scenario planning and stock management for specific products.",
 }
 
-export default function ProductPlanningPage({ params }: { params: { productName: string } }) {
+export default function ProductPlanningPage({ params }: { params: { productName: any } }) {
   const productName = decodeURIComponent(params.productName).replace(/-/g, " ")
 
   return (
@@ -24,7 +24,7 @@ export default function ProductPlanningPage({ params }: { params: { productName:
       <div className="flex min-h-screen">
         <main className="flex-1 space-y-6 p-6">
           <div className="flex items-center justify-between mb-6">
-            <Link href="/planning" passHref>
+            <Link href="/home/planning" passHref>
               <Button variant="ghost" className="flex items-center text-indigo-600 hover:text-indigo-800">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Planning
